@@ -1,3 +1,7 @@
 This mod turns every map into a map with Landria rules
 
 This mod does not do anything during the first turn.
+
+If there are more than 100 active bonuses or 500 territories that the mod has to consider, the mod will be ignored.
+
+Sanction cards and army cap are not yet compatible.
