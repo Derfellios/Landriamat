@@ -13,25 +13,26 @@
 		CountNested = Mod.Settings.CountNested;
 	end
 		
-	local vert = UI.CreateVerticalLayoutGroup(rootParent);
+	vert = UI.CreateVerticalLayoutGroup(rootParent);
 	
 	if AllowZero then
-		local message0 = "Bonuses worth zero count for the Landria rules"
+		message0 = "Bonuses worth zero count for the Landria rules"
 	else
-		local message0 = "Bonuses worth zero do not count for the Landria rules"
+		message0 = "Bonuses worth zero do not count for the Landria rules"
 	end
 		
 	if AllowNegative then
-		local message1 = "Bonuses worth negative income count for the Landria rules"
+		message1 = "Bonuses worth negative income count for the Landria rules"
 	else
-		local message1 = "Bonuses worth negative income do not count for the Landria rules"
+		message1 = "Bonuses worth negative income do not count for the Landria rules"
 	end
 		
 	if CountNested then
-		local message2 = "A border between neigbouring territories T1 and T2 and bonuses B1 and B2 counts if territory T1 is in bonus B1 and territory T2 is in bonus B2. Multiple borders between two terriories can exist"
+		message2 = "A border between neigbouring territories T1 and T2 and bonuses B1 and B2 counts if territory T1 is in bonus B1 and territory T2 is in bonus B2. Multiple borders between two terriories can exist"
 	else
-		local message2 = "A border between neigbouring territories T1 and T2 and bonuses B1 and B2 only count if territory T1 is in bonus B1 and territory T2 is in bonus B2, territory T2 is not in bonus B1 and territory T1 is not in bonus B2. Multiple borders between two terriories can exist"
+		message2 = "A border between neigbouring territories T1 and T2 and bonuses B1 and B2 only count if territory T1 is in bonus B1 and territory T2 is in bonus B2, territory T2 is not in bonus B1 and territory T1 is not in bonus B2. Multiple borders between two terriories can exist"
 	end
+	local vert = UI.CreateVerticalLayoutGroup(rootParent);
 	
 	UI.CreateLabel(vert).SetText(message0);
 	UI.CreateLabel(vert).SetText(message1);
